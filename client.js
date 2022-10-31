@@ -1,4 +1,4 @@
-const socket=io('https://ghastly-spirit-14498.herokuapp.com/');
+const socket=io();
 const form=document.getElementById('send-container');
 const messageInput=document.getElementById('messageInp');
 const messageContainer=document.querySelector('.container');
