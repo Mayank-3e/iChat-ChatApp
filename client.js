@@ -1,4 +1,5 @@
-const socket=io('api/index.js');
+const io=require('./api/index.js')
+const socket=io();
 const form=document.getElementById('send-container');
 const messageInput=document.getElementById('messageInp');
 const messageContainer=document.querySelector('.container');

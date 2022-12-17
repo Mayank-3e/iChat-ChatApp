@@ -15,3 +15,4 @@ io.on('connection',socket=>{
         delete users[socket.id];
     });
 });
+module.exports=io
