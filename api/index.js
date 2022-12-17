@@ -1,5 +1,5 @@
 const io=require('socket.io')(process.env.PORT || 8000,{
-    cors: {origin:'*'}
+    cors: {origin:"*"}
 });
 const users={};
 io.on('connection',socket=>{

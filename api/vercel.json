@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "music-album",
+  "name": "ichat-app-api",
   "builds": [
     {
       "src": "index.js",
