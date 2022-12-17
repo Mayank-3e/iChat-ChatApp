@@ -1,5 +1,5 @@
 // const socket=io('https://ichat-app-api.vercel.app/')
-const socket = openSocket('https://ichat-app-api.vercel.app/', {transports: ['websocket']});
+const socket = io('https://ichat-app-api.vercel.app/', {transports: ['websocket']});
 const form=document.getElementById('send-container');
 const messageInput=document.getElementById('messageInp');
 const messageContainer=document.querySelector('.container');
