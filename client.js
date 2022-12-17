@@ -1,4 +1,4 @@
-const socket=io('https://ichat-chat-app.vercel.app/api/index.js')
+const socket=io('https://ichat-app-api.vercel.app')
 const form=document.getElementById('send-container');
 const messageInput=document.getElementById('messageInp');
 const messageContainer=document.querySelector('.container');
