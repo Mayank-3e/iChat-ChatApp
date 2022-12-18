@@ -4,6 +4,7 @@ const http = require('http');
 const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server, { cors: {origin:"*"} });
+const port =process.env.PORT || 8000
 
 const users={};
 io.on('connection',socket=>{
@@ -19,7 +20,10 @@ io.on('connection',socket=>{
         delete users[socket.id];
     });
 });
-server.listen(process.env.PORT || 8000)
+server.listen(port,()=>
+{
+    console.log("server listening on port "+port)
+})
 app.get("/", (req, res) => {
   res.send("Express on Vercel");
 });
