@@ -20,7 +20,10 @@ io.on('connection',socket=>{
         delete users[socket.id];
     });
 });
-server.listen(port)
-// app.get("/", (req, res) => {
-//   res.send("Express on Vercel, port: "+port);
-// });
+server.listen(port,()=>
+{
+    console.log("server listening on port "+port)
+})
+app.get("/", (req, res) => {
+  res.send(io);
+});
