@@ -43,5 +43,6 @@ app.get("/", (req, res) => {
         // alert("io is working");
         console.log(io)
     }
+    console.log("Express app listening on port "+port)
   res.status(200).send("Express app listening on port "+port);
 });
