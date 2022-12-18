@@ -25,6 +25,8 @@ server.listen(port,()=>
     console.log("server listening on port "+port)
 })
 app.get("/", (req, res) => {
-//   res.status(200).send({io});
+  if(http) alert("http is working");
+  if(server) alert("server is working");
+  if(io) alert("io is working");
   res.status(200).send("Express app listening on port "+port);
 });
