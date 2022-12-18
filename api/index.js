@@ -25,5 +25,5 @@ server.listen(port,()=>
     console.log("server listening on port "+port)
 })
 app.get("/", (req, res) => {
-  res.send(io);
+  res.status(200).send({io});
 });
